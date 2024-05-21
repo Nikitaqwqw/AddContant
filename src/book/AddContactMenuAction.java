@@ -1,11 +1,13 @@
+package book;
+
 import java.util.Scanner;
 
 public class AddContactMenuAction implements MenuAction {
 
-    private ImMemoryContacts contacts;
+    private InMemoryContacts contacts;
     private Scanner scanner;
 
-    public AddContactMenuAction(ImMemoryContacts contacts, Scanner scanner) {
+    public AddContactMenuAction(InMemoryContacts contacts, Scanner scanner) {
         this.contacts = contacts;
         this.scanner = scanner;
     }

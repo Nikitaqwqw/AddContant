@@ -1,3 +1,5 @@
+package book;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -24,7 +26,11 @@ public class Menu {
                 System.out.println("Ви обрали невірний пункт меню");
                 continue;
             }
-            actions[choice].execute();
+            try {
+                actions[choice].execute();
+            } catch (IndexOutOfBoundsException e){
+                System.out.println("Ви вибрали невірний контакт");
+            }
             if (actions[choice].closeAfter()) break;
         }
     }

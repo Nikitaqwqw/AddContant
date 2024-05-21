@@ -1,10 +1,13 @@
+package book;
+
 import java.util.ArrayList;
+
 
 public class ShowContactsMenuAction implements MenuAction {
 
-    private ImMemoryContacts memoryContacts;
+    private InMemoryContacts memoryContacts;
 
-    public ShowContactsMenuAction(ImMemoryContacts memoryContacts) {
+    public ShowContactsMenuAction(InMemoryContacts memoryContacts) {
         this.memoryContacts = memoryContacts;
     }
 
@@ -12,6 +15,16 @@ public class ShowContactsMenuAction implements MenuAction {
     public String getName() {
         return "Показати усі контакти";
     }
+
+//    public void executeTest(ContactsI contacts){
+//        if (contacts == null){
+//            System.out.println("Не ініціалізоване значення");
+//            return;
+//        }
+//        for (int i = 0; i < contacts.getAll().size(); i++) {
+//            System.out.println(contacts.getAll().get(i));
+//        }
+//    }
 
     @Override
     public void execute() {

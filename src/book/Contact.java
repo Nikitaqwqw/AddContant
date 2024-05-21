@@ -1,3 +1,5 @@
+package book;
+
 public class Contact {
 
     private String name;
@@ -20,5 +22,11 @@ public class Contact {
         this.phoneNumber = phoneNumber;
     }
 
-
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "name='" + name + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                '}';
+    }
 }

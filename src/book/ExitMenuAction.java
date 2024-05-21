@@ -1,3 +1,5 @@
+package book;
+
 public class ExitMenuAction implements MenuAction {
 
 
